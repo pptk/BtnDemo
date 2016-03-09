@@ -18,6 +18,8 @@
 		CF6CAACC1C8FB04700A96AC6 /* IconWithBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6CAACB1C8FB04700A96AC6 /* IconWithBtn.m */; };
 		CF6CAACE1C8FB16900A96AC6 /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6CAACD1C8FB16900A96AC6 /* abc.png */; };
 		CF6CAAD01C8FB18000A96AC6 /* abc_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6CAACF1C8FB18000A96AC6 /* abc_selected.png */; };
+		CF6CAAD41C8FCA3900A96AC6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6CAAD31C8FCA3900A96AC6 /* line.png */; };
+		CF6CAAD61C8FE9B300A96AC6 /* line_green.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6CAAD51C8FE9B300A96AC6 /* line_green.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		CF6CAACB1C8FB04700A96AC6 /* IconWithBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconWithBtn.m; sourceTree = "<group>"; };
 		CF6CAACD1C8FB16900A96AC6 /* abc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc.png; sourceTree = "<group>"; };
 		CF6CAACF1C8FB18000A96AC6 /* abc_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc_selected.png; sourceTree = "<group>"; };
+		CF6CAAD31C8FCA3900A96AC6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		CF6CAAD51C8FE9B300A96AC6 /* line_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_green.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 		CF6CAA951C8FAFFE00A96AC6 /* BtnDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF6CAAD31C8FCA3900A96AC6 /* line.png */,
+				CF6CAAD51C8FE9B300A96AC6 /* line_green.png */,
 				CF6CAACF1C8FB18000A96AC6 /* abc_selected.png */,
 				CF6CAACD1C8FB16900A96AC6 /* abc.png */,
 				CF6CAAC91C8FB01000A96AC6 /* BtnView */,
@@ -263,9 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6CAACE1C8FB16900A96AC6 /* abc.png in Resources */,
+				CF6CAAD41C8FCA3900A96AC6 /* line.png in Resources */,
 				CF6CAAA61C8FAFFE00A96AC6 /* LaunchScreen.storyboard in Resources */,
 				CF6CAAA31C8FAFFE00A96AC6 /* Assets.xcassets in Resources */,
 				CF6CAAA11C8FAFFE00A96AC6 /* Main.storyboard in Resources */,
+				CF6CAAD61C8FE9B300A96AC6 /* line_green.png in Resources */,
 				CF6CAAD01C8FB18000A96AC6 /* abc_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +528,7 @@
 				CF6CAAC21C8FAFFE00A96AC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF6CAAC31C8FAFFE00A96AC6 /* Build configuration list for PBXNativeTarget "BtnDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +537,7 @@
 				CF6CAAC51C8FAFFE00A96AC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF6CAAC61C8FAFFE00A96AC6 /* Build configuration list for PBXNativeTarget "BtnDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +546,7 @@
 				CF6CAAC81C8FAFFE00A96AC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

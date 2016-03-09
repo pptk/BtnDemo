@@ -17,8 +17,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initBtn];
+}
+
+#pragma mark 注水动画。
+-(void)initMask{
+    UIImageView *imageLine = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    imageLine.image = [UIImage imageNamed:@"line.png"];
+    [self.view addSubview:imageLine];
+    
+    UIImageView *imageGreenLine = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    imageGreenLine.image = [UIImage imageNamed:@"line_green.png"];
+    //    imageGreenLine.layer.zPosition = 1;
+    [self.view addSubview:imageGreenLine];
+    
+    UIView *maskView = [[UIView alloc]initWithFrame:CGRectMake(-100, 0, 100, 100)];
+    maskView.backgroundColor = [UIColor yellowColor];
+    //    maskView.alpha = 0.5;
+    
+    [UIView animateWithDuration:1 animations:^{
+        maskView.frame = CGRectMake(0, 0, 100, 100);
+    }];
+    
+    imageGreenLine.layer.mask = maskView.layer;
+}
+#pragma mark
+-(void)initBtn{
     IconWithBtn *iconBtn = [[IconWithBtn alloc]init];
-    iconBtn.frame = CGRectMake(100, 100, 100, 100);
+    iconBtn.frame = CGRectMake(100, 300, 100, 100);
     iconBtn.selectedImage = [UIImage imageNamed:@"abc.png"];
     iconBtn.unSelectedImage = [UIImage imageNamed:@"abc_selected.png"];
     iconBtn.backgroundColor = [UIColor yellowColor];//
@@ -28,8 +54,6 @@
     [self.view addSubview:iconBtn];
     
     [iconBtn addTarget:self action:@selector(btnActions:) forControlEvents:UIControlEventTouchUpInside];
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)btnActions:(UIButton *)sender{
     if(sender.selected){
